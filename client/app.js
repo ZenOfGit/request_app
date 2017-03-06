@@ -17,9 +17,13 @@ requestApp.config(function($routeProvider){
 		controller:'UsersController',
 		templateUrl: 'views/user_details.html'
 	})
-	.when('/users/add',{
+	.when('/users/adduser',{
 		controller:'UsersController',
 		templateUrl: 'views/add_user.html'
+	})
+	.when('/users/addtools',{
+		controller:'UsersController',
+		templateUrl: 'views/add_tools.html'
 	})
 	.when('/users/edit/:id',{
 		controller:'UsersController',
