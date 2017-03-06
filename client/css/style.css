@@ -1,0 +1,70 @@
+html {
+background:#F1F4FD;
+}
+
+body {
+background:#F1F4FD;
+}
+
+.panel-body {
+background:#F1F4FD;
+}
+
+.panel-default > .panel-heading {
+  color: #bbd8ff;
+  background-color: #104080;
+}
+
+md-checkbox.md-checked.blue .md-icon {
+ background-color: #104080;
+}
+
+.btn-primary {
+    background: #104080;
+    color: #bbd8ff;
+}
+
+.navbar-default {
+  background-color: #104080;
+  border-color: #104080;
+}
+.navbar-default .navbar-brand {
+  color: #bbd8ff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #d3dded;
+  background-color: #395c93;    
+}
+.navbar-default .navbar-text {
+  color: #bbd8ff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #bbd8ff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #d3dded;
+  background-color: #395c93;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #104080;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #d3dded;
+  background-color: #395c93;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #104080;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #d3dded;
+  background-color: #395c93;
+}
+

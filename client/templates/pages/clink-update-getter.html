@@ -1,0 +1,91 @@
+<div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Old First Name</label>
+                    <input class="form-control" type="text" ng-model="oldFirstName">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div ng-if="oldFirstName">
+                    <md-input-container>
+                        <label>New First Name</label>
+                        <input name="uFirstName" ng-model="user.uFirstName">
+                    </md-input-container>
+                </div>
+
+            </div>
+        </div>
+        <br>
+
+
+        <div class="form-group">
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uLastName">Last Name
+        </div>
+        <br>
+
+        <div class="form-group">
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uEmail">Email Address
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uTitle">Title
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uAddressLine1">Work Address
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uAddressLine2">Work Address Line 2
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uCity">City
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uState">State
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uZip">Zip
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uPhone">Direct Phone #
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uFax">Fax #
+            <br>
+            <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uCell">Cell #
+            <br>
+        </div>
+
+
+        <div class="form-inline">
+            <div class="form-group">
+
+                <div ng-if="contactCtrl.contactPackage.uLastName">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newLastName"> New Last Name
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uEmail">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newEmail"> New Email Address
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uTitle">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newTitle"> New Title
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uAddressLine1">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newAddressLine1"> New Work Address
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uAddressLine2">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newAddressLine2"> New Work Address Line 2
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uCity">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newCity"> New City
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uState">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newState"> New State
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uZip">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.newZip"> New Zip
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uPhone">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uPhone"> New Direct Phone #
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uFax">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uFax"> New Fax #
+                </div>
+                <div ng-if="contactCtrl.contactPackage.uCell">
+                    <input class="form-control" type="text" ng-model="contactCtrl.contactPackage.uCell"> New Cell #
+                </div>
+            </div>
+        </div>
+</div>

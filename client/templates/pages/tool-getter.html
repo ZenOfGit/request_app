@@ -1,0 +1,70 @@
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.crmAccess" name="crmAccess">Consumer Marketing
+                            </md-checkbox>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" ng-model="user.crmAccessLevel" ng-show="user.crmAccess" name="crmAccessLevel">
+                                <option value="Marketing Complete System">Marketing Complete System</option>
+                                <option value="Marketing Analyst">Marketing Analyst</option>
+                                <option value="Marketing Coordinator">Marketing Coordinator</option>
+                                <option value="Data Entry Clerk">Data Entry Clerk</option>
+                                <option value="Marketing Database Management">Marketing Database Management</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.mAAccess" name="mAAccess">Marketing Automation
+                            </md-checkbox>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="text" ng-model="user.mAClientId" ng-show="user.mAAccess" placeholder="Act-On Client ID" name="mAClientId">
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.emailAccess" name="emailAccess">Email Sending
+                            </md-checkbox>
+                            <select class="form-control" ng-model="user.emailAccessLevel" ng-show="user.emailAccess" name="emailAccessLevel">
+                                <option value="Email Tools (Full Access)">Email Tools (Full Access)</option>
+                                <option value="Email Tools (View Only)">Email Tools (View Only)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.prmAccess" name="prmAccess">PRM Access (Physician Marketing System (WAPF))
+                            </md-checkbox>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="prmAccessLevel" ng-model="user.prmAccessLevel" ng-show="user.prmAccess" name="prmAccessLevel">
+                                <option value="PRMS Manager">PRMS Manager</option>
+                                <option value="Physician Liaison">Physician Liaison</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.claimsAccess" name="claimsAccess">Claims (Physician Market Share and Professional Networkikng Profile)
+                            </md-checkbox>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.pDC" name="pDC">PDC
+                            </md-checkbox>
+                        </div>
+                    </div>
+
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <md-checkbox class="blue" ng-model="user.pAndF" name=pAndF>P and F (Strategic Planning System)
+                            </md-checkbox>
+                        </div>
+                    </div>
