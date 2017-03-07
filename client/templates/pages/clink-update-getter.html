@@ -1,236 +1,223 @@
 <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Client Code</label>
-                    <input class="form-control" type="text" ng-model="oldClientCode">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldClientCode">
-                    <md-input-container>
-                        <label>New Client Code</label>
-                        <input name="uClientCode" ng-model="user.uClientCode">
-                    </md-input-container>
-                </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Client Code</label>
+                <input class="form-control" type="text" ng-model="oldClientCode">
             </div>
         </div>
-        <br>    
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old First Name</label>
-                    <input class="form-control" type="text" ng-model="oldFirstName">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldFirstName">
-                    <md-input-container>
-                        <label>New First Name</label>
-                        <input name="uFirstName" ng-model="user.uFirstName">
-                    </md-input-container>
-                </div>
+        <div class="col-md-6">
+            <div ng-if="oldClientCode">
+                <md-input-container>
+                    <label>New Client Code</label>
+                    <input name="uClientCode" ng-model="user.uClientCode">
+                </md-input-container>
             </div>
         </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Last Name</label>
-                    <input class="form-control" type="text" ng-model="oldLastName">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldLastName">
-                    <md-input-container>
-                        <label>New Last Name</label>
-                        <input name="uLastName" ng-model="user.uLastName">
-                    </md-input-container>
-                </div>
-            </div>
-        </div>
-        <br>
+    </div>
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Email Address</label>
-                    <input class="form-control" type="text" ng-model="oldEmailAddress">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldEmailAddress">
-                    <md-input-container>
-                        <label>New Email Address</label>
-                        <input name="uEmailAddress" ng-model="user.uEmailAddress">
-                    </md-input-container>
-                </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old First Name</label>
+                <input class="form-control" type="text" ng-model="oldFirstName">
             </div>
         </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Title</label>
-                    <input class="form-control" type="text" ng-model="oldTitle">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldTitle">
-                    <md-input-container>
-                        <label>New Title</label>
-                        <input name="uTitle" ng-model="user.uTitle">
-                    </md-input-container>
-                </div>
+        <div class="col-md-6">
+            <div ng-if="oldFirstName">
+                <md-input-container>
+                    <label>New First Name</label>
+                    <input name="uFirstName" ng-model="user.uFirstName">
+                </md-input-container>
             </div>
         </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Work Address</label>
-                    <input class="form-control" type="text" ng-model="oldAddressLine1">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldAddressLine1">
-                    <md-input-container>
-                        <label>New Work Address</label>
-                        <input name="uAddressLine1" ng-model="user.uAddressLine1">
-                    </md-input-container>
-                </div>
-            </div>
-        </div>
-        <br>    
+    </div>
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Address Line 2</label>
-                    <input class="form-control" type="text" ng-model="oldAddressLine2">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldAddressLine2">
-                    <md-input-container>
-                        <label>New Address Line 2</label>
-                        <input name="uAddressLine2" ng-model="user.uAddressLine2">
-                    </md-input-container>
-                </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Last Name</label>
+                <input class="form-control" type="text" ng-model="oldLastName">
             </div>
         </div>
-        <br>
+        <div class="col-md-6">
+            <div ng-if="oldLastName">
+                <md-input-container>
+                    <label>New Last Name</label>
+                    <input name="uLastName" ng-model="user.uLastName">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old City</label>
-                    <input class="form-control" type="text" ng-model="oldCity">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldCity">
-                    <md-input-container>
-                        <label>New City</label>
-                        <input name="uCity" ng-model="user.uCity">
-                    </md-input-container>
-                </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Email Address</label>
+                <input class="form-control" type="text" ng-model="oldEmailAddress">
             </div>
         </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old State</label>
-                    <input class="form-control" type="text" ng-model="oldState">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldState">
-                    <md-input-container>
-                        <label>New State</label>
-                        <input name="uState" ng-model="user.uState">
-                    </md-input-container>
-                </div>
+        <div class="col-md-6">
+            <div ng-if="oldEmailAddress">
+                <md-input-container>
+                    <label>New Email Address</label>
+                    <input name="uEmailAddress" ng-model="user.uEmailAddress">
+                </md-input-container>
             </div>
         </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Zip</label>
-                    <input class="form-control" type="text" ng-model="oldZip">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldZip">
-                    <md-input-container>
-                        <label>New Zip</label>
-                        <input name="uZip" ng-model="user.uZip">
-                    </md-input-container>
-                </div>
-            </div>
-        </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Work Phone</label>
-                    <input class="form-control" type="text" ng-model="oldWorkPhone">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldWorkPhone">
-                    <md-input-container>
-                        <label>New Work Phone</label>
-                        <input name="uWorkPhone" ng-model="user.uWorkPhone">
-                    </md-input-container>
-                </div>
-            </div>
-        </div>
-        <br>
+    </div>
 
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Fax #</label>
-                    <input class="form-control" type="text" ng-model="oldFax">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldFax">
-                    <md-input-container>
-                        <label>New Fax #</label>
-                        <input name="uFax" ng-model="user.uFax">
-                    </md-input-container>
-                </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Title</label>
+                <input class="form-control" type="text" ng-model="oldTitle">
             </div>
         </div>
-        <br>
-    
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <label>Old Cell #</label>
-                    <input class="form-control" type="text" ng-model="oldCell">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div ng-if="oldCell">
-                    <md-input-container>
-                        <label>New Cell #</label>
-                        <input name="uCell" ng-model="user.uCell">
-                    </md-input-container>
-                </div>
+        <div class="col-md-6">
+            <div ng-if="oldTitle">
+                <md-input-container>
+                    <label>New Title</label>
+                    <input name="uTitle" ng-model="user.uTitle">
+                </md-input-container>
             </div>
         </div>
-        <br>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Work Address</label>
+                <input class="form-control" type="text" ng-model="oldAddressLine1">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldAddressLine1">
+                <md-input-container>
+                    <label>New Work Address</label>
+                    <input name="uAddressLine1" ng-model="user.uAddressLine1">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Address Line 2</label>
+                <input class="form-control" type="text" ng-model="oldAddressLine2">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldAddressLine2">
+                <md-input-container>
+                    <label>New Address Line 2</label>
+                    <input name="uAddressLine2" ng-model="user.uAddressLine2">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old City</label>
+                <input class="form-control" type="text" ng-model="oldCity">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldCity">
+                <md-input-container>
+                    <label>New City</label>
+                    <input name="uCity" ng-model="user.uCity">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old State</label>
+                <input class="form-control" type="text" ng-model="oldState">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldState">
+                <md-input-container>
+                    <label>New State</label>
+                    <input name="uState" ng-model="user.uState">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Zip</label>
+                <input class="form-control" type="text" ng-model="oldZip">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldZip">
+                <md-input-container>
+                    <label>New Zip</label>
+                    <input name="uZip" ng-model="user.uZip">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Work Phone</label>
+                <input class="form-control" type="text" ng-model="oldWorkPhone">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldWorkPhone">
+                <md-input-container>
+                    <label>New Work Phone</label>
+                    <input name="uWorkPhone" ng-model="user.uWorkPhone">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Fax #</label>
+                <input class="form-control" type="text" ng-model="oldFax">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldFax">
+                <md-input-container>
+                    <label>New Fax #</label>
+                    <input name="uFax" ng-model="user.uFax">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label>Old Cell #</label>
+                <input class="form-control" type="text" ng-model="oldCell">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div ng-if="oldCell">
+                <md-input-container>
+                    <label>New Cell #</label>
+                    <input name="uCell" ng-model="user.uCell">
+                </md-input-container>
+            </div>
+        </div>
+    </div>
 </div>

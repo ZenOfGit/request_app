@@ -1,10 +1,10 @@
-html {
+/*html {
 background:#F1F4FD;
-}
+}*/
 
-body {
+/*body {
 background:#F1F4FD;
-}
+}*/
 
 .panel-body {
 background:#F1F4FD;
@@ -17,6 +17,18 @@ background:#F1F4FD;
 
 md-checkbox.md-checked.blue .md-icon {
  background-color: #104080;
+}
+
+md-checkbox.md-checked.red .md-icon {
+ background-color: #f41628;
+}
+
+span.red {
+ color: #f41628;
+}
+
+span.bold {
+    font-weight: 900;
 }
 
 .btn-primary {

@@ -1,20 +1,18 @@
-<div class="panel panel-warning">
+<div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title">Remove Tools</h3>
+        <h3 class="panel-title">Remove Tools</h3> We will only remove access to the tools marked with a red check mark
     </div>
     <div class="panel-body">
         <div class="row">
-            <div class="col-md-12">
                 <form ng-submit="addUser()">
                     <div class="col-md-6">
                         <id-getter></id-getter>
                     </div>
                     <div class="col-md-6">
-                        <tool-getter></tool-getter>
+                        <tool-remover></tool-remover>
                     </div>
                     <button type="submit" class="btn btn-primary pull-right">Submit</button>
                 </form>
             </div>
-        </div>
     </div>
 </div>

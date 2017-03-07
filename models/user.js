@@ -26,29 +26,24 @@ const userSchema = mongoose.Schema({
     },
     uAddressLine1: {
         type: String,
-        required: true
     },
     uAddressLine2: {
         type: String
     },
     uCity: {
-        type: String,
-        required: true        
+        type: String,      
     },
     uState: {
-        type: String,
-        required: true        
+        type: String,      
     },
     uZip: {
-        type: String,
-        required: true        
+        type: String,       
     },
     uZip4: {
         type: String     
     },
     uWorkPhone: {
         type: String,
-        required: true
     },
     uFax: {
         type: String
@@ -88,6 +83,9 @@ const userSchema = mongoose.Schema({
     },
     pAndF: {
         type: Boolean
+    },
+    uAllTools: {
+        type: Boolean
     }
 });
 
@@ -96,7 +94,7 @@ const User = module.exports = mongoose.model('User', userSchema);
 
 // Get Users function (access from the route)
 module.exports.getUsers = (callback, limit) => {
-        User.find(callback).limit(limit);  //cap L?
+        User.find(callback).limit(limit);
 }
 
 // Get User
@@ -138,7 +136,8 @@ module.exports.updateUser = (id, user, options, callback) => {
 		prmAccessLevel: user.prmAccessLevel,
 		claimsAccess: user.claimsAccess,
 		pDC: user.pDC,
-        pAndF: user.pAndF
+        pAndF: user.pAndF,
+        uAllTools: user.uAllTools
 	}
 	User.findOneAndUpdate(query, update, options, callback);
 }

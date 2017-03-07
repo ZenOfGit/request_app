@@ -24,6 +24,18 @@ angular.module('requestApp')
             templateUrl: '/templates/pages/tool-getter.html'
         };
     })
+    .directive('toolRemover', function(){
+        return{
+            restrict: 'E',
+            templateUrl: '/templates/pages/tool-remover.html'
+        };
+    })
+    .directive('idGetter', function(){
+        return{
+            restrict: 'E',
+            templateUrl: '/templates/pages/id-getter.html'
+        };
+    })
     .directive('clinkUpdateGetter', function(){
         return{
             restrict: 'E',

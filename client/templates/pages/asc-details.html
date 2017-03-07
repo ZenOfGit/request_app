@@ -2,11 +2,8 @@
     <md-checkbox class="blue" ng-model="user.inClink" name="inClink">Already in Clink?
     </md-checkbox>
 </div>
-<div class="form-group">
-    <md-checkbox class="blue" ng-model="user.replaceAsc" name="replaceAsc">Replace old ASC with this new one
-    </md-checkbox>
-</div>
-<div class="form-group">
-    <md-checkbox class="blue" ng-model="user.additionalAsc" name="additionalAsc">Keep existing and add another ASC
-    </md-checkbox>
-</div>
+<md-radio-group>
+    <md-radio-button value="Update" class="md-primary" ng-model="user.additionalAsc">Update current ASC info</md-radio-button>
+    <md-radio-button value="Replace" class="md-primary" ng-model="user.replaceAsc"> Replace old ASC with this new one </md-radio-button>
+    <md-radio-button value="Keep" class="md-primary" ng-model="user.additionalAsc">Keep existing and add another ASC</md-radio-button>
+</md-radio-group>

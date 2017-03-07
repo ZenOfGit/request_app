@@ -52,5 +52,8 @@ app.post('/api/users', (req, res) => {
 	});
 });
 
-app.listen(3000);
-console.log('Running on port 3000...');
+// port chane for Heroku
+var port = process.env.PORT || 3000;
+
+// Server
+app.listen(port);
