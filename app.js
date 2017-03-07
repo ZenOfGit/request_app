@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 User = require('./models/user');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://localhost/requestdb')
+mongoose.connect('mongodb://hgadmin:supersecret@ds119750.mlab.com:19750/heroku_sb93n45m')
 var db = mongoose.connection;
 
 // Home route
