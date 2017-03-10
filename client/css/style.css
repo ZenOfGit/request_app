@@ -36,6 +36,10 @@ span.bold {
     color: #bbd8ff;
 }
 
+md-tooltip ._md-content {
+    font-size: 30pt
+}
+
 .navbar-default {
   background-color: #104080;
   border-color: #104080;

@@ -1,20 +1,23 @@
 <div class="panel panel-default" ng-init="getUser()">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{user.uFirstName}} {{user.uLastName}}</h3>
-  </div>
-  <div class="panel-body">
-    <div class="row">
-      <div class="col-md-4">
-        <p>{{user.uEmailAddress}}</p>
-      </div>
-      <div class="col-md-8">
-        <p>{{user.uTitle}}</p>
-        <ul class="list-group">
-          <li class="list-group-item">Address: {{user.uAddressLine1}}</li>
-          <li class="list-group-item">City: {{user.uCity}}, {{user.uState}} {{user.uZip}}</li>
-          <li class="list-group-item">Phone: {{user.uWorkPhone}}</li>
-        </ul>
-      </div>
+    <div class="panel-heading">
+        <h3 class="panel-title">{{user.uFirstName}} {{user.uMiddleName}} {{user.uLastName}}</h3>
     </div>
-  </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4">
+                <p>{{user.uEmailAddress}}</p>
+            </div>
+            <div class="col-md-8">
+                <p>{{user.uTitle}}</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Address: {{user.uAddressLine1}
+                        <br>{{user.uAddressLine2}}</li>
+                    <li class="list-group-item">City: {{user.uCity}}, {{user.uState}} {{user.uZip}} - {{user.uZip4}}</li>
+                    <li class="list-group-item">Phone: {{user.uWorkPhone}}</li>
+                    <li class="list-group-item">Fax: {{user.uFax}}</li>
+                    <li class="list-group-item">Phone: {{user.uCellPhone}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
