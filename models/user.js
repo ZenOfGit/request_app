@@ -86,6 +86,12 @@ const userSchema = mongoose.Schema({
     },
     uAllTools: {
         type: Boolean
+    },
+    aSCName: {
+        type: Text
+    },
+    aSCEmail: {
+        type: Text
     }
 });
 
@@ -137,7 +143,9 @@ module.exports.updateUser = (id, user, options, callback) => {
 		claimsAccess: user.claimsAccess,
 		pDC: user.pDC,
         pAndF: user.pAndF,
-        uAllTools: user.uAllTools
+        uAllTools: user.uAllTools,
+        aSCName: user.aSCName,
+        aSCEmail: user.aSCEmail
 	}
 	User.findOneAndUpdate(query, update, options, callback);
 }

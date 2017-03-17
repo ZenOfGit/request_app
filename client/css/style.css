@@ -15,6 +15,11 @@ background:#F1F4FD;
   background-color: #104080;
 }
 
+#page-footer {
+    text-align: center;
+    color: #104080;
+}
+
 md-checkbox.md-checked.blue .md-icon {
  background-color: #104080;
 }
