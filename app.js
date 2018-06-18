@@ -13,8 +13,9 @@ app.use(bodyParser.json());
 User = require('./models/user');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://hgadmin:supersecret@ds119750.mlab.com:19750/heroku_sb93n45m')
-var db = mongoose.connection;
+mongoose.connect('mongodb://hgadmin:supersecret@ds119750.mlab.com:19750/heroku_sb93n45m');
+//mongoose.connect('mongodb://localhost/requestdb');
+let db = mongoose.connection;
 
 // Home route
 app.get('/', (req, res) => {
@@ -43,7 +44,7 @@ app.get('/api/users/:_id', (req, res) => {
 
 // Add user route
 app.post('/api/users', (req, res) => {
-	var user = req.body;
+    let user = req.body;
 	User.addUser(user, (err, user) => {
 		if(err){
 			throw err;
@@ -52,8 +53,31 @@ app.post('/api/users', (req, res) => {
 	});
 });
 
+// Update user route
+app.put('/api/users/:_id', (req, res) => {
+    let id = req.params._id;
+    let user = req.body;
+    User.updateUser(id, user, (err, user) => {
+        if(err){
+            throw err;
+        }
+        res.json(user);
+    });
+});
+
+// Delete user route
+app.delete('/api/users:_id', (req, res) => {
+    let id = req.params._id;
+    User.removeUser(id, (err, user) => {
+        if(err){
+            throw err;
+        }
+        res.json(user);
+    });
+});
+
 // port chane for Heroku
-var port = process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
 
 // Server
 app.listen(port);

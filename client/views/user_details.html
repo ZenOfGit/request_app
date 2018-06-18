@@ -10,14 +10,17 @@
             <div class="col-md-8">
                 <p>{{user.uTitle}}</p>
                 <ul class="list-group">
-                    <li class="list-group-item">Address: {{user.uAddressLine1}
+                    <li class="list-group-item">Address: {{user.uAddressLine1}}
                         <br>{{user.uAddressLine2}}</li>
-                    <li class="list-group-item">City: {{user.uCity}}, {{user.uState}} {{user.uZip}} - {{user.uZip4}}</li>
+                    <li class="list-group-item">City: {{user.uCity}}, {{user.uState}} {{user.uZip}} {{user.uZip4}}</li>
                     <li class="list-group-item">Phone: {{user.uWorkPhone}}</li>
                     <li class="list-group-item">Fax: {{user.uFax}}</li>
-                    <li class="list-group-item">Phone: {{user.uCellPhone}}</li>
+                    <li class="list-group-item">Cell: {{user.uCellPhone}}</li>
                 </ul>
             </div>
         </div>
     </div>
+</div>
+<div class="pull-right">
+    <a href="#!" ng_click="removeUser(user._id)">Delete</a>
 </div>

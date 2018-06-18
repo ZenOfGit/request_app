@@ -88,10 +88,10 @@ const userSchema = mongoose.Schema({
         type: Boolean
     },
     aSCName: {
-        type: Text
+        type: String
     },
     aSCEmail: {
-        type: Text
+        type: String
     }
 });
 
@@ -115,8 +115,8 @@ module.exports.addUser = (user, callback) => {
 
 // Update User
 module.exports.updateUser = (id, user, options, callback) => {
-	var query = {_id: id};
-	var update = {
+    let query = {_id: id};
+    let update = {
         uClientCode: user.uClientCode,
 		uFirstName: user.uFirstName,
 		uMiddleName: user.uMiddleName,
@@ -152,6 +152,6 @@ module.exports.updateUser = (id, user, options, callback) => {
 
 // Delete User
 module.exports.removeUser = (id, callback) => {
-	var query = {_id: id};
+    let query = {_id: id};
 	User.remove(query, callback);
 }

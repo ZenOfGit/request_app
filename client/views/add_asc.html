@@ -1,21 +1,27 @@
 <div class="panel panel-default">
     <div class="panel-heading">
         <h3 class="panel-title">ASC Update</h3>
-                        <md-tooltip md-direction="top">
-            Add, change, or update the ASC by clicking <br>the radio button of your choice.  We <br>will add the ASC as a user in Clink if <br>there is no account in the system yet. <br>This is also where you will update all <br>CLink data for any ASC. Submit and <br>then email from the main page.</md-tooltip>
+        <md-tooltip md-direction="top">
+            Add, change, or update the ASC
+<!--            <br>Click the radio button of your choice. We
+            <br>will add the ASC as a user in Clink if
+            <br>there is no account in the system yet.
+            <br>This is also where you will update all
+            <br>CLink data for any ASC. Submit and
+            <br>then email from the main page.-->
+        </md-tooltip>
     </div>
     <div class="panel-body">
         <div class="row">
-
-                <form ng-submit="addUser()">
-                    <div class="col-md-6">
-                        <asc-getter></asc-getter>
-                    </div>
-                    <div class="col-md-6">
-                        <asc-details></asc-details>
-                    </div>
-                    <button type="submit" class="btn btn-primary pull-right">Submit</button>
-                </form>
+            <form ng-submit="addUser()">
+                <div class="col-md-6">
+                    <asc-getter></asc-getter>
+                </div>
+                <div class="col-md-6">
+                    <asc-details></asc-details>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Submit</button>
+            </form>
 
         </div>
     </div>
