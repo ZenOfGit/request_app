@@ -12,6 +12,7 @@ requestApp.controller('UsersController', ['$scope', '$http', '$location', '$rout
 	$scope.getUser = function(){
 		var id = $routeParams.id;
 		$http.get('/api/users/'+id).then(function(response){
+			console.log('in getUser()');
 			$scope.user = response.data;
 		});
 	}
@@ -32,7 +33,7 @@ requestApp.controller('UsersController', ['$scope', '$http', '$location', '$rout
 
 	$scope.removeUser = function(id){
 		$http.delete('/api/users/'+id).then(function(response){
-			console.log($scope.user);
+			console.log('in removeUser()');
 			window.location.href='#/users';
 		});
 	}
