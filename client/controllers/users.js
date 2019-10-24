@@ -32,6 +32,7 @@ requestApp.controller('UsersController', ['$scope', '$http', '$location', '$rout
 
 	$scope.removeUser = function(id){
 		$http.delete('/api/users/'+id).then(function(response){
+			console.log($scope.user);
 			window.location.href='#/users';
 		});
 	}
