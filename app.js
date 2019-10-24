@@ -80,4 +80,6 @@ app.delete('/api/users:_id', (req, res) => {
 let port = process.env.PORT || 3000;
 
 // Server
-app.listen(port);
+app.listen(port, () => 
+	console.log(`Listening on port ${port}...`));
+	
