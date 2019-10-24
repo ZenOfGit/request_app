@@ -153,5 +153,5 @@ module.exports.updateUser = (id, user, options, callback) => {
 // Delete User
 module.exports.removeUser = (id, callback) => {
     let query = {_id: id};
-	User.deleteOne(query, callback);
+	User.remove(query, callback);
 }

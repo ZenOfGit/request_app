@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 User = require('./models/user');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://hgadmin:supersecret@ds119750.mlab.com:19750/heroku_sb93n45m');
+mongoose.connect(MONGODB_URI);
 //mongoose.connect('mongodb://localhost/requestdb');
 let db = mongoose.connection;
 
@@ -82,4 +82,3 @@ let port = process.env.PORT || 3000;
 // Server
 app.listen(port, () => 
 	console.log(`Listening on port ${port}...`));
-	
