@@ -3,11 +3,16 @@ const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const middleware = require('./middleware');
+
+
 // Specify static folder as public directory
 app.use(express.static(__dirname+'/client'));
 
 // Middleware for body-parser
 app.use(bodyParser.json());
+
+app.use(middleware.enableCORS);
 
 // Add objects
 User = require('./models/user');
@@ -16,6 +21,15 @@ User = require('./models/user');
 mongoose.connect('mongodb://hgadmin:supersecret@ds119750.mlab.com:19750/heroku_sb93n45m');
 //mongoose.connect('mongodb://localhost/requestdb');
 let db = mongoose.connection;
+
+mongoose.connection.on('connected', () => {
+	console.log('Connected to database.');
+});
+
+// On Error
+mongoose.connection.on('error', (err) => {
+	console.log('Database error: '+err);
+});
 
 // Home route
 app.get('/', (req, res) => {
@@ -66,8 +80,9 @@ app.put('/api/users/:_id', (req, res) => {
 });
 
 // Delete user route
-app.delete('/api/users:_id', (req, res) => {
-    let id = req.params._id;
+app.delete('/api/users/:_id', (req, res) => {
+	 let id = req.params._id;
+	 let user = req.body;
     User.removeUser(id, (err, user) => {
         if(err){
             throw err;
@@ -76,7 +91,7 @@ app.delete('/api/users:_id', (req, res) => {
     });
 });
 
-// port chane for Heroku
+// port chanel for Heroku
 let port = process.env.PORT || 3000;
 
 // Server
