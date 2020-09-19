@@ -28,6 +28,18 @@ md-checkbox.md-checked.red .md-icon {
  background-color: #f41628;
 }
 
+.notes {
+  color: darkred;
+  text-align: left;
+  padding: 5px, 5px, 5px, 5px;
+}
+
+.instructions {
+  color: darkred;
+  text-align: left;
+  padding: 5px, 5px, 5px, 5px;
+}
+
 span.red {
  color: #f41628;
 }

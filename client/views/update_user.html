@@ -1,23 +1,24 @@
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h3 class="panel-title">CLink Update Only</h3>                                       <md-tooltip md-direction="top">
+        <h3 class="panel-title">CLink Update Only</h3>
+        <md-tooltip md-direction="top">
             Please only enter the data you wish to change
-<!--        <br>in each respective field and the new
+            <!--        <br>in each respective field and the new
         <br>data in the field that appears after
         <br>you enter the existing data. Submit
         <br>multiple users and email from the main
         <br>page.-->
-    </md-tooltip>
+        </md-tooltip>
     </div>
     <div class="panel-body">
         <div class="row">
-            <form ng-submit="addUser()">
-
-                    <div class="col-md-12">
-                        <clink-update-getter></clink-update-getter>
-                    </div>
-                <button type="submit" class="btn btn-primary pull-right">Submit</button>
+            <!-- <form ng-submit="addUser()"> -->
+            <form>
+                <div class="col-md-12">
+                    <clink-update-getter></clink-update-getter>
+                </div>
+                <button type="submit" class="btn btn-primary pull-right">Submit (disabled for demo)</button>
             </form>
 
+        </div>
     </div>
-</div>
