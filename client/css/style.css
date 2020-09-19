@@ -40,6 +40,10 @@ md-checkbox.md-checked.red .md-icon {
   padding: 5px, 5px, 5px, 5px;
 }
 
+.demo-user {
+  margin: auto;
+}
+
 span.red {
  color: #f41628;
 }
