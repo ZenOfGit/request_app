@@ -1,0 +1,5 @@
+# Ignore Bower components
+bower_components
+
+# Ignore node modules
+node_modules
